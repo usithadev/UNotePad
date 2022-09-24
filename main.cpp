@@ -92,19 +92,31 @@ void MainFrame::OnAbout(cmd& evt) {
     about->Show(true);
 }
 
-void MainFrame::OnSave(cmd& evt) {
+void MainFrame::OnSave(cmd& WXUNUSED(evt)) {
     
-    //The text of the editor
+    // The text of the editor
     wxString str = this->editor->GetText();
 
+    // Getting the path
+    wxFileDialog saveFileAs(this, "Save as", "", "", "Plain text files (*.txt)|*.txt", wxFD_SAVE | wxFD_OVERWRITE_PROMPT);
+    if(saveFileAs.ShowModal() == wxID_CANCEL) {
+        return;
+    }
+    auto path = saveFileAs.GetPath();
+
     // Write the str to the Untitled.txt file
-    wxFile *file = new wxFile("Untitled.txt", wxFile::write);
+    wxFileOutputStream output(path);
+    if(!output.IsOk()) {
+        wxMessageBox("Unable to save the file");
+        return;
+    }
+
+    wxFile *file = new wxFile(path, wxFile::write);
     if(file->IsOpened()) {
         file->Write(str);
     }
     file->Close();
 
-    wxMessageBox("Your text file has been saved as Untitled.txt in the same directory. Adding a file dialog is an upcoming feature. Please contribute at https://github.com/usithadev/UNotePad to make a file dialog; I am busy these days. But I'll do it when i have a time. Thank you.", "File saved");
 }
 
 
