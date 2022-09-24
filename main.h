@@ -38,74 +38,23 @@ wxDECLARE_APP(App);
  * @brief The main window object.
  * 
  */
-class MainFrame : public wxFrame {
+class MainFrame : public wxFrame {    
+public:
+    MainFrame(const wxString& title);
+
 private:
     using cmd = wxCommandEvent;
-    wxPanel *panel = new wxPanel(this, wxID_ANY);
-    wxStyledTextCtrl *editor = new wxStyledTextCtrl(panel, wxID_ANY, wxDefaultPosition);
-    
-public:
-    /**
-     * @brief Construct a new Main Frame object
-     * 
-     * @param title The title of the window.
-     */
-    MainFrame(const wxString& title);
-    
-    /**
-     * @brief The event function of the `Quit` menu item
-     * 
-     * @param evt 
-     */
+    wxPanel *panel = new wxPanel(this, wxID_ANY); // The main panel
+    wxStyledTextCtrl *editor = new wxStyledTextCtrl(panel, wxID_ANY, wxDefaultPosition); // The text editor
+
+    // Event methods for menu items
     void OnExit(cmd& evt);
-
-    /**
-     * @brief The event function of the `About` menu item
-     * 
-     * @param evt 
-     */
     void OnAbout(cmd& evt);
-
-    /**
-     * @brief The event function of the `Save` menu item
-     * 
-     * @param evt 
-     */
     void OnSave(cmd& evt);
-
-    /**
-     * @brief The event function of the `Undo` menu item
-     * 
-     * @param evt 
-     */
     void OnUndo(cmd& evt);
-
-    /**
-     * @brief The event function of the `Redo` menu item
-     * 
-     * @param evt 
-     */
     void OnRedo(cmd& evt);
-
-    /**
-     * @brief The event function of the `Copy` menu item
-     * 
-     * @param evt 
-     */
     void OnCopy(cmd& evt);
-
-    /**
-     * @brief The event function of the `Cut` menu item
-     * 
-     * @param evt 
-     */
     void OnCut(cmd& evt);
-
-    /**
-     * @brief The event function of the `Paste` menu item
-     * 
-     * @param evt 
-     */
     void OnPaste(cmd& evt);
 };
 
