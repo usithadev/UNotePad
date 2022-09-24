@@ -10,7 +10,7 @@ To build this project you should have installed [CMake](https://cmake.org), a c+
   
 After that, open up the terminal:  
 ```bash
-git clone https://github.com/usithadev/UNotePad.git #For this you need git installed. You can also go to the github repository and download the coe.
+git clone https://github.com/usithadev/UNotePad.git #For this you need git installed. You can also go to the github repository and download the code.
 
 cd UNotePad
 
