@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.1.0)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static")
 set(wxWidgets_DIR "F:/apps/wxWidgets/lib/cmake/wxWidgets") # Set this variable to the directory that installed wxWidgets
 
-project(UNotePad VERSION 1.0.0)
+project(UNotePad VERSION 1.0.1)
 
 find_package(wxWidgets REQUIRED core base stc CONFIG)
 include(UsewxWidgets)
@@ -25,7 +25,7 @@ target_link_libraries(UNotePad ${wxWidgets_LIBRARIES})
 find_package(Doxygen REQUIRED)
 if(DOXYGEN_FOUND)
     set(DOXYGEN_PROJECT_NAME "UNotePad")
-    set(DOXYGEN_PROJECT_NUMBER 1.0.0)
+    set(DOXYGEN_PROJECT_NUMBER 1.0.1)
     set(DOXYGEN_PROJECT_BRIEF "A simple text editor application.")
 
     doxygen_add_docs(doxygen

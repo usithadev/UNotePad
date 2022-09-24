@@ -3,8 +3,8 @@
 appicon ICON "icon.ico"
 
 1 VERSIONINFO
-FILEVERSION     1,0,0
-PRODUCTVERSION  1,0,0
+FILEVERSION     1,0,1
+PRODUCTVERSION  1,0,1
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
@@ -12,11 +12,11 @@ BEGIN
         BEGIN
             VALUE "CompanyName",      "Usitha Indeewara"
             VALUE "FileDescription",  "A text editor application."
-            VALUE "FileVersion",      "1.0.0"
+            VALUE "FileVersion",      "1.0.1"
             VALUE "LegalCopyright",   "Copyright (c) 2022 Usitha Indeewara. All Rights Reserved."
             VALUE "OriginalFilename", "UNotePad.exe"
             VALUE "ProductName",      "UNotePad"
-            VALUE "ProductVersion",   "1.0.0"
+            VALUE "ProductVersion",   "1.0.1"
         END
     END
 
