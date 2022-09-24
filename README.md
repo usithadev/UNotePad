@@ -14,7 +14,7 @@ git clone https://github.com/usithadev/UNotePad.git #For this you need git insta
 
 cd UNotePad
 
-cmake -DwxWidgets_DIR=path/to/wxWidgets -S . -B ./build -DCMAKE_BUILD_TYPE="Release" -G "MinGW Makefiles"
+cmake -DwxWidgets_DIR=path/to/wxWidgets/lib/cmake/wxWidgets -S . -B ./build -DCMAKE_BUILD_TYPE="Release" -G "MinGW Makefiles"
 
 cd build
 
