@@ -46,7 +46,7 @@ MainFrame::MainFrame(const wxString& title) : wxFrame(nullptr, wxID_ANY, title)
     //
     wxMenu *file = new wxMenu;
     file->Append(wxID_EXIT);
-    file->Append(wxID_SAVE);
+    file->Append(wxID_SAVEAS);
 
     wxMenu *help = new wxMenu;
     help->Append(wxID_ABOUT);
@@ -74,7 +74,7 @@ MainFrame::MainFrame(const wxString& title) : wxFrame(nullptr, wxID_ANY, title)
     //
     Bind(wxEVT_MENU, &MainFrame::OnExit, this, wxID_EXIT);
     Bind(wxEVT_MENU, &MainFrame::OnAbout, this, wxID_ABOUT);
-    Bind(wxEVT_MENU, &MainFrame::OnSave, this, wxID_SAVE);
+    Bind(wxEVT_MENU, &MainFrame::OnSaveAs, this, wxID_SAVEAS);
     Bind(wxEVT_MENU, &MainFrame::OnUndo, this, wxID_UNDO);
     Bind(wxEVT_MENU, &MainFrame::OnRedo, this, wxID_REDO);
     Bind(wxEVT_MENU, &MainFrame::OnCut, this, wxID_CUT);
@@ -92,7 +92,7 @@ void MainFrame::OnAbout(cmd& evt) {
     about->Show(true);
 }
 
-void MainFrame::OnSave(cmd& WXUNUSED(evt)) {
+void MainFrame::OnSaveAs(cmd& WXUNUSED(evt)) {
     
     // The text of the editor
     wxString str = this->editor->GetText();

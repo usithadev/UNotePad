@@ -51,7 +51,7 @@ private:
     // Event methods for menu items
     void OnExit(cmd& evt);
     void OnAbout(cmd& evt);
-    void OnSave(cmd& WXUNUSED(evt));
+    void OnSaveAs(cmd& WXUNUSED(evt));
     void OnUndo(cmd& evt);
     void OnRedo(cmd& evt);
     void OnCopy(cmd& evt);
