@@ -1,6 +1,6 @@
 # UNotePad
 
-This is a simple text editor application written in C++ using [wxWidgets](https://wxwidgets.org) (which is a cross platform library for building graphical user interfaces). This project is for beginners who wants to learn about basics about wxWidgets. You can just read the code. It don't has a good documentation but is has a readable and self-explanatory code. You can learn basics of wxWidgets (sizers, frames, events, file handling, etc) by reading the code.  
+This is a simple text editor application written in C++ using [wxWidgets](https://wxwidgets.org) (which is a cross platform library for building graphical user interfaces). This project is for beginners who wants to learn about basics about wxWidgets. You can just read the code. It doesn't have a good documentation but is has a readable and self-explanatory code. You can learn basics of wxWidgets (sizers, frames, events, file handling, etc) by reading the code.  
   
 Currently this app is saving a .txt file in a directory that asked from user using a file dialog (the Save as feature) and have basic editing options like copy, cut, paste, etc. And I didn't have added much basic features such as open, save, etc. I'll add them when I have a time. So feel free to contribute to this project.  
 
