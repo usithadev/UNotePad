@@ -104,7 +104,7 @@ void MainFrame::OnSaveAs(cmd& WXUNUSED(evt)) {
     }
     auto path = saveFileAs.GetPath();
 
-    // Write the str to the Untitled.txt file
+    // Write the str to the file
     wxFileOutputStream output(path);
     if(!output.IsOk()) {
         wxMessageBox("Unable to save the file");
