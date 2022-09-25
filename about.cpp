@@ -1,5 +1,5 @@
 /**
- * @file main.cpp
+ * @file about.cpp
  * @author Usitha Indeewara (https://github.com/usithadev)
  * @brief The forward declarations of classes and functions in about.h file.
  * @version 0.1

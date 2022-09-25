@@ -1,5 +1,5 @@
 /**
- * @file main.cpp
+ * @file about.cpp
  * @author Usitha Indeewara (https://github.com/usithadev)
  * @brief Class declaration of the about dialog frame
  * @version 0.1
