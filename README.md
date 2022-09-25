@@ -18,6 +18,8 @@ cmake -DwxWidgets_DIR=path/to/wxWidgets/lib/cmake/wxWidgets -S . -B ./build -DCM
 
 cd build
 
+cmake --build .
+
 ```
 
 Now you can find the UNotePad.exe (and the doxygen documentation files) in the build folder.
