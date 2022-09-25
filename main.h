@@ -81,6 +81,8 @@ private:
  * 
  * cd build
  * 
+ * cmake --build .
+ * 
  * ```
  * 
  * Now you can find the UNotePad.exe (and the doxygen documentation files) in the build folder.
