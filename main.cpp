@@ -22,7 +22,9 @@ bool App::OnInit() {
 
 MainFrame::MainFrame(const wxString& title) : wxFrame(nullptr, wxID_ANY, title)
 {
+#if WIN32
     this->SetIcon(wxICON(appicon)); // Set the application icon
+#endif // WIN32
 
     //
     // Widgets
