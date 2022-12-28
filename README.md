@@ -6,20 +6,20 @@ Currently this app is saving a .txt file in a directory that asked from user usi
 
 ## Build Instructions
 
-To build this project you should have installed [CMake](https://cmake.org), a c++ compiler and built wxWidgets from source using CMake. (For wxWidgets build instructions see https://docs.wxwidgets.org/latest/overview_cmake.html).  
+To build this project you should have installed [CMake](https://cmake.org), a c++ compiler and [wxWidgets](https://wxwidgets.org). 
   
 After that, open up the terminal:  
 ```bash
-git clone https://github.com/usithadev/UNotePad.git #For this you need git installed. You can also go to the github repository and download the code.
+$ git clone https://github.com/usithadev/UNotePad.git #For this you need git installed. You can also go to the github repository and download the code.
 
-cd UNotePad
+$ cd UNotePad
 
-cmake -DwxWidgets_DIR=path/to/wxWidgets/lib/cmake/wxWidgets -S . -B ./build -DCMAKE_BUILD_TYPE="Release" -G "MinGW Makefiles"
+$ cmake -S . -B ./build -G "Unix Makefiles"
 
-cd build
+$ cd build
 
-cmake --build .
+$ cmake --build .
 
 ```
 
-Now you can find the UNotePad.exe (and the doxygen documentation files) in the build folder.
+Now you can find the UNotePad.exe in the build folder.
