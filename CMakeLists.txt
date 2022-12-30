@@ -1,11 +1,8 @@
 cmake_minimum_required(VERSION 3.1.0)
 
-# set(CMAKE_BUILD_TYPE "Release")
-# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static")
-
 project(UNotePad VERSION 1.0.1)
 
-find_package(wxWidgets REQUIRED core base stc)
+find_package(wxWidgets REQUIRED core base stc COMPONENTS CONFIG)
 include(UsewxWidgets)
 
 set(SRC_FILES main.cpp main.h about.h about.cpp)
