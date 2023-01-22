@@ -74,7 +74,7 @@ MainFrame::MainFrame(const wxString& title) : wxFrame(nullptr, wxID_ANY, title)
     SetMenuBar(menubar);
 
     CreateStatusBar();
-    SetStatusText("POWERED BY UziDev");
+    SetStatusText("Welcome to the lightweight text editor: UNotePad");
 
     //
     // Event bindings
