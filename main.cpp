@@ -47,8 +47,13 @@ MainFrame::MainFrame(const wxString& title) : wxFrame(nullptr, wxID_ANY, title)
     // Menu bar and status bar
     //
     wxMenu *file = new wxMenu;
-    file->Append(wxID_EXIT);
+    file->Append(wxID_NEW);
+    file->Append(wxID_OPEN);
+    file->AppendSeparator();
+    file->Append(wxID_SAVE);
     file->Append(wxID_SAVEAS);
+    file->AppendSeparator();
+    file->Append(wxID_EXIT);
 
     wxMenu *help = new wxMenu;
     help->Append(wxID_ABOUT);
