@@ -5,6 +5,8 @@
  * @version 0.1
  * @date 2022-09-24
  * 
+ * @todo License the source files, Add license notice to tehe about message, Make Save, New, Open commands functional
+ * 
  * @copyright Copyright (c) 2022 Usitha Indeewara. All Rights Reserved.
  * 
  */
